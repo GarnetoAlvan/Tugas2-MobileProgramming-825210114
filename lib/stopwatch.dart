@@ -186,7 +186,7 @@ class StopWatchState extends State<StopWatch> {
       children: <Widget>[
         ElevatedButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.purple),
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
             ),
             onPressed: ()=> _startTimer(),
@@ -195,7 +195,7 @@ class StopWatchState extends State<StopWatch> {
         SizedBox(width: 20),
         TextButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
             ),
             onPressed: ()=> _stopTimer(),
@@ -204,7 +204,7 @@ class StopWatchState extends State<StopWatch> {
         SizedBox(width: 20),
         TextButton(
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.green),
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
             ),
             onPressed: isTicking ? _lap: null,
